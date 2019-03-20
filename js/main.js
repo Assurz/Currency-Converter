@@ -83,7 +83,7 @@ let updateDisplay = (rate, query) => {
 };
 
 let getRatesOnline = query => {
-  fetch(`${API_URL}/convert?q=${query}&compact=ultra`)
+  fetch(`${API_URL}/convert?q=${query}&compact=ultra&apiKey=64d4d563d3f2bcda7e08`)
     .then(res => res.json())
     .then(res => {
       let rate = res[query];
