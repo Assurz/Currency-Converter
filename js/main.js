@@ -141,7 +141,7 @@ let convert = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch(`${API_URL}/currencies`)
+  fetch(`${API_URL}/currencies?apiKey=64d4d563d3f2bcda7e08`)
     .then(res => res.json())
     .then(res => {
       currency_list = res.results;
